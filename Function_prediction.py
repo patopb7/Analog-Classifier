@@ -4,7 +4,6 @@ import jax.numpy as jnp
 from jax import jit, value_and_grad, random, debug, vmap
 import time
 from utilfuncs import Mesher, computeLocalElements, computeFilter, get_dof#, plot_mesh, plot_and_export_mesh
-from mmaOptimize import optimize
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_iris
 from sklearn.preprocessing import OneHotEncoder
