@@ -113,7 +113,9 @@ plot_area.pyplot(fig, clear_figure=True)
 if st.button("Run prediction"):
     # Model prediction
     st.subheader("🤖 Model prediction:")
-    
+
+    status_message = st.empty()
+    status_message.info("Running Prediction...")
     u_pred = run_prediction(rho, sample_index)
     U_prediction = jnp.abs(u_pred)
     
@@ -165,7 +167,7 @@ if st.button("Run prediction"):
     )
     
     st.altair_chart(chart, use_container_width=True)
-    
+    status_message.empty()  # elimina el mensaje
 
 
 else:
