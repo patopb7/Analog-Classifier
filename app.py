@@ -35,11 +35,11 @@ y_true = y_onehot[sample_index]
 y_pred = model(x_sample)
 
 # True label
-st.subheader("🎯 Sample {sample_index}:")
+st.subheader(f"🎯 Sample {sample_index}:")
 true_class = target_names[np.argmax(y_true)]
 
 # Layout with two columns
-col1, col2 = st.columns([1, 4])  # col1 = 1/4 width
+col1, col2 = st.columns([4, 1])  # col1 = 1/4 width
 
 image_options = [
     "Images/iris_virginica.png",
