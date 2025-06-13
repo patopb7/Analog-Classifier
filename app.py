@@ -71,7 +71,18 @@ with col1:
 
 with col2:
     st.image("Images/Dimensions.png", caption="Iris flower", use_container_width=True)
-    
+
+
+st.title("⚙️ Analog Classifier")
+
+st.markdown(
+    """
+    Each input feature is applied as a physical force in a structural system.  
+    The resulting displacements are measured at three specific locations.  
+    The predicted class corresponds to the point with the **maximum displacement**.
+    """
+)
+
 rho = np.load("rho_opt0.npy")
 nelx, nely = 80, 30
 
