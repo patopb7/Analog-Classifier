@@ -35,7 +35,7 @@ y_true = y_onehot[sample_index]
 y_pred = model(x_sample)
 
 # True label
-st.subheader("🎯 True label:")
+st.subheader("🎯 Sample {sample_index}:")
 true_class = target_names[np.argmax(y_true)]
 
 # Layout with two columns
@@ -50,10 +50,11 @@ image_path = image_options[sample_index % 3]
 
 with col1:
     # st.image("Images/Dimensions.png", caption="Iris flower", use_container_width=True)
+    st.success(f"{true_class}")
+    
+with col2:
     st.image(image_path, caption="", use_container_width=True)
 
-with col2:
-    st.success(f"{true_class}")
 
 
 
