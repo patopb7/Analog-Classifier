@@ -77,9 +77,7 @@ st.title("⚙️ Analog Classifier")
 
 st.markdown(
     """
-    Each input feature is applied as a physical force in a structural system.  
-    The resulting displacements are measured at three specific locations.  
-    The predicted class corresponds to the point with the **maximum displacement**.
+    Each input feature is applied as a physical force in a structural system. The resulting displacements are measured at three specific locations. The predicted class corresponds to the point with the **maximum displacement**.
     """
 )
 
